@@ -1,0 +1,20 @@
+.product-hover-zoom-effect{
+  transition: .5s;
+  height: 300px;
+  animation-name: product_img_start;
+  animation-duration: 1s;
+  &:hover{
+    opacity: .8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes product_img_start{
+  from {
+    transform: scale(1.3);
+    opacity: 0.3;
+  }
+  to {
+    transform: scale(1)
+  }
+}
